@@ -8,9 +8,9 @@ export class MyList extends React.PureComponent<{}, {}> {
   render () {
     return (
       <List classes={{root: style.root}}>
-        <ListItem button>Item 1</ListItem>
-        <ListItem button>Item 2</ListItem>
-        <ListItem button>Item 3</ListItem>
+        <ListItem classes={{root: style.item}} button>Item 1</ListItem>
+        <ListItem classes={{root: style.item}} button>Item 2</ListItem>
+        <ListItem classes={{root: style.item}} button>Item 3</ListItem>
       </List>
     );
   }

@@ -1,6 +1,11 @@
 // Intentionally increase selector specificity.
 .root.root {
   margin: 2rem;
+  padding: 0;
   border: 1px solid darkgray;
-  border-radius: 10px;
+  border-radius: 0;
 };
+
+.item {
+  font-size: 2rem;
+}
