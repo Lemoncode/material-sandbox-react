@@ -1,0 +1,10 @@
+// Intentionally increase selector specificity.
+.root.root {
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+.label {
+  font-size: 2rem;
+}

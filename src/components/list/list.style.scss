@@ -1,0 +1,6 @@
+// Intentionally increase selector specificity.
+.root.root {
+  margin: 2rem;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+};
