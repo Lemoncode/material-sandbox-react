@@ -1,14 +1,11 @@
-import { css } from 'emotion';
-
-export const root = css`
-  && {
-    margin: 2rem;
-    padding: 0;
-    border: 1px solid darkgray;
-    border-radius: 0;
+export default () => ({
+  root: {
+    margin: '2rem',
+    padding: 0,
+    border: '1px solid darkgray',
+    borderRadius: 0,
+  },
+  item: {
+    fontSize: '2rem',
   }
-`;
-
-export const item = css`
-  font-size: 2rem;
-`;
+});

@@ -1,12 +1,13 @@
 import * as React from 'react';
 import Button from '@material-ui/core/Button';
-import * as style from './button.style';
+import style from './button.style';
+import { withStyles, WithStyles } from '@material-ui/core/styles';
 
-interface MyButtonProps {
+interface MyButtonProps extends WithStyles<typeof style>{
   label: string;
 }
 
-export class MyButton extends React.PureComponent<MyButtonProps, {}> {
+class MyButtonInner extends React.PureComponent<MyButtonProps, {}> {
   constructor(props) {
     super(props);
   }
@@ -17,8 +18,8 @@ export class MyButton extends React.PureComponent<MyButtonProps, {}> {
         variant="raised"
         color="primary"
         classes={{
-          root: style.root,
-          label: style.label,          
+          root: this.props.classes.root,
+          label: this.props.classes.label,          
         }}
       >
         {this.props.label}
@@ -26,3 +27,5 @@ export class MyButton extends React.PureComponent<MyButtonProps, {}> {
     );
   }
 };
+
+export const MyButton = withStyles(style)<MyButtonProps>(MyButtonInner);

@@ -1,24 +1,18 @@
-import { css } from 'emotion';
-
-export const root = css`
-  && {
-    margin: 2rem;
-  }
-`;
-
-export const input = css`
-  border: 1px solid darkgray;
-  border-radius: 0;
-  background-color: lightgray;
-  
-  &::before, &::after {
-    display: none;
-  }
-`;
-
-export const label = css`
-  && {
-    z-index: 2;
-    color: white;
-  }
-`;
+export default () => ({
+  root: {
+    margin: '2rem',
+  },
+  input: {
+    border: '1px solid darkgray',
+    borderRadius: 0,
+    backgroundColor: 'lightgray',
+    
+    '&::before, &::after': {
+      display: 'none',
+    }
+  },
+  label: {
+    zIndex: 2,
+    color: 'white',
+  },
+});

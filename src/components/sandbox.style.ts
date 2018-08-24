@@ -1,11 +1,13 @@
-import { css } from 'emotion';
+import { createStyles } from "@material-ui/core/styles";
 
-export const pageContainer = css`
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  overflow-y: auto;
-`;
+export default () => createStyles({
+  pageContainer: {
+    height: '100vh',
+    width: '100vw',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    overflowY: 'auto',
+  }
+});
