@@ -12,7 +12,6 @@ export class MyInput extends React.PureComponent<{}, {}> {
         InputProps={{
           classes: {
             root: style.input,
-            underline: style.underline,
           }
         }}
         InputLabelProps={{
