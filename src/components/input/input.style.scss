@@ -1,20 +1,19 @@
 // Intentionally increase selector specificity.
-.root.root {
+.textFieldStyle.textFieldStyle {
   margin: 2rem;
-}
 
-.input {
-  border: 1px solid darkgray;
-  border-radius: 0;
-  background-color: lightgray;
-  
-  &::before, &::after {
-    display: none;
+  & > [class*=MuiFormLabel]:not([class*=focused]) {
+    z-index: 2;
+    color: white;
   }
-}
 
-// Intentionally increase selector specificity.
-.label.label {
-  z-index: 2;
-  color: white;
+  & > [class*=MuiInput-root] {
+    border: 1px solid darkgray;
+    border-radius: 0;
+    background-color: lightgray;
+
+    &::before, &::after {
+      display: none;
+    }
+  }
 }

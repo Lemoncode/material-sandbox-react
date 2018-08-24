@@ -7,10 +7,10 @@ const style = require("./list.style.scss");
 export class MyList extends React.PureComponent<{}, {}> {
   render () {
     return (
-      <List classes={{root: style.root}}>
-        <ListItem classes={{root: style.item}} button>Item 1</ListItem>
-        <ListItem classes={{root: style.item}} button>Item 2</ListItem>
-        <ListItem classes={{root: style.item}} button>Item 3</ListItem>
+      <List className={style.listStyle}>
+        <ListItem className={style.itemStyle} button>Item 1</ListItem>
+        <ListItem className={style.itemStyle} button>Item 2</ListItem>
+        <ListItem className={style.itemStyle} button>Item 3</ListItem>
       </List>
     );
   }

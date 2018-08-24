@@ -1,11 +1,11 @@
 // Intentionally increase selector specificity.
-.root.root {
+.listStyle.listStyle {
   margin: 2rem;
   padding: 0;
   border: 1px solid darkgray;
   border-radius: 0;
 };
 
-.item {
+.itemStyle {
   font-size: 2rem;
 }

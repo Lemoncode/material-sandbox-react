@@ -14,12 +14,9 @@ export class MyButton extends React.PureComponent<MyButtonProps, {}> {
   render() {
     return (
       <Button
+        className={style.buttonStyle}  
         variant="raised"
         color="primary"
-        classes={{
-          root: style.root,
-          label: style.label,          
-        }}
       >
         {this.props.label}
       </Button>

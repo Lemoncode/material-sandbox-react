@@ -7,18 +7,8 @@ export class MyInput extends React.PureComponent<{}, {}> {
   render () {
     return (
       <TextField
-        classes={{root: style.root}}
+        className={style.textFieldStyle}
         label="Insert text"
-        InputProps={{
-          classes: {
-            root: style.input,
-          }
-        }}
-        InputLabelProps={{
-          classes: {
-            root: style.label,
-          }
-        }}
       />
     );
   }

@@ -1,10 +1,10 @@
 // Intentionally increase selector specificity.
-.root.root {
+.buttonStyle.buttonStyle {
   margin: 2rem;
   border-radius: 0;
   box-shadow: 0 0 10px black;
-}
 
-.label {
-  font-size: 2rem;
+  & > [class*=MuiButton-label] {
+    font-size: 2rem;
+  }
 }
