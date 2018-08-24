@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Button from '@material-ui/core/Button';
-const style = require('./button.style.scss');
+import * as style from './button.style';
 
 interface MyButtonProps {
   label: string;

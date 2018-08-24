@@ -11,7 +11,7 @@ module.exports = {
     extensions: [".js", ".ts", ".tsx"],
   },
   entry: {
-    app: ["./app.tsx", "./style.scss"],
+    app: ["./app.tsx"],
   },
   output: {
     path: path.join(basePath, "dist"),
@@ -26,27 +26,6 @@ module.exports = {
         options: {
           useBabel: true,
         },
-      },
-      {
-        test: /\.css$/,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }],
-      },
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: [
-          { loader: "style-loader" },
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              camelCase: true,
-              importLoaders: 1,
-              localIdentName: "[name]__[local]___[hash:base64:5]",
-            },
-          },
-          { loader: "sass-loader" },
-        ],
       },
       // Loading glyphicons => https://github.com/gowravshekar/bootstrap-webpack
       // Using here url-loader and file-loader

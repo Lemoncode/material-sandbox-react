@@ -1,4 +1,6 @@
-.page-container {
+import { css } from 'emotion';
+
+export const pageContainer = css`
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -6,5 +8,4 @@
   justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
-};
-
+`;

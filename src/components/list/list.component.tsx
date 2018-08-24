@@ -1,8 +1,7 @@
 import * as React from 'react';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-
-const style = require("./list.style.scss");
+import * as style from './list.style';
 
 export class MyList extends React.PureComponent<{}, {}> {
   render () {

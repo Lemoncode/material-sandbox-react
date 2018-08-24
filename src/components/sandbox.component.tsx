@@ -2,7 +2,7 @@ import * as React from 'react';
 import { MyButton } from './button';
 import { MyList } from './list';
 import { MyInput } from './input/input.component';
-const style = require('./sandbox.style.scss');
+import * as style from './sandbox.style';
 
 export const Sandbox: React.StatelessComponent<{}> = (props) => {
   return (

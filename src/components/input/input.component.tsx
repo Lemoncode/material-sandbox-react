@@ -1,7 +1,6 @@
 import * as React from 'react';
 import TextField from '@material-ui/core/TextField';
-
-const style = require("./input.style.scss");
+import * as style from './input.style';
 
 export class MyInput extends React.PureComponent<{}, {}> {
   render () {
@@ -12,7 +11,6 @@ export class MyInput extends React.PureComponent<{}, {}> {
         InputProps={{
           classes: {
             root: style.input,
-            underline: style.underline,
           }
         }}
         InputLabelProps={{
