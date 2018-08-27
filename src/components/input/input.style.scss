@@ -1,6 +1,7 @@
 // Intentionally increase selector specificity.
 .textFieldStyle.textFieldStyle {
   margin: 2rem;
+  flex-shrink: 0;
 
   & > [class*=MuiFormLabel]:not([class*=focused]) {
     z-index: 2;
