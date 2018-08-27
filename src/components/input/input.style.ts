@@ -1,6 +1,7 @@
 export default () => ({
   root: {
     margin: '2rem',
+    flexShrink: 0,
   },
   input: {
     border: '1px solid darkgray',
