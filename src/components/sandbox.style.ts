@@ -9,3 +9,19 @@ export const pageContainer = css`
   align-items: center;
   overflow-y: auto;
 `;
+
+export const carouselItemA = css`
+  background-color: white;
+`;
+
+export const carouselItemTitleA = css`
+  color: red;
+`;
+
+export const carouselItemB = css`
+  border-radius: 10px;
+`;
+
+export const carouselItemTitleB = css`
+  color: green;
+`;

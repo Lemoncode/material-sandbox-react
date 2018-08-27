@@ -3,6 +3,7 @@ import { css } from 'emotion';
 export const root = css`
   && {
     margin: 2rem;
+    flex-shrink: 0;
   }
 `;
 
