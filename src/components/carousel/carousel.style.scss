@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+
+  .action {
+    margin: 0 0.5rem;
+    user-select: none;
+    cursor: pointer;
+
+    &.disabledAction {
+      opacity: 0.2;
+      cursor: none;
+    }
+  }
+}
+
+.collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  min-width: 300px;
+  padding: 0.25rem;
+  margin: 0.5rem;
+  background-color: lightgray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  cursor: pointer;
+
+  &.selectedItem {
+    box-shadow: 0 0 10px black;
+  }
+}

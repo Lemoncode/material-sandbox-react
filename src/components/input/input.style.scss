@@ -1,5 +1,6 @@
 // Intentionally increase selector specificity.
 .root.root {
+  flex-shrink: 0;
   margin: 2rem;
 }
 
